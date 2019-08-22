@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+
+.cover {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+.item {
+  
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.overlay {
+  transition: bottom ease 1s;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  opacity: 0.9;
+  color: rgb(212, 19, 45);
+}
+
+.item:hover .overlay{
+  display: block;
+  bottom: 0;
+}
+img {
+  width: 99%;
+
+}
