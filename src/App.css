@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-color: black;
+}
+
+.movieInfo {
+  background-color: black;
+  color: white;
+  height: 600px;
+  padding: 30px;
 }
 
 
@@ -30,11 +38,17 @@
   color: rgb(212, 19, 45);
 }
 
-.item:hover .overlay{
+.item:hover .overlay {
   display: block;
   bottom: 0;
+  filter: brightness(50%);
 }
+
 img {
   width: 99%;
 
+}
+
+.item:hover .img {
+ 
 }
