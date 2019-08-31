@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Details from './Details/Details.js'
+import Details from './frontend/Details/Details.js.js'
 import Gallery from './Gallery';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NotFound from './NotFound.js';
+import NotFound from './NotFound.js/index.js';
 
 function App() {
   return (

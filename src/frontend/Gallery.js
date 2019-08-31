@@ -1,7 +1,7 @@
 import React from 'react';
 import TvShow from './TvShow';
 import endGame from "./images/endGame.jpg";
-import getTvshows from "./tvShows-get.js";
+import getTvshows from "./tvShows-get.js/index.js";
 
 
 function Gallery() {
