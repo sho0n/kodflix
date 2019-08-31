@@ -1,0 +1,28 @@
+.Details .d_tittle {
+    color: white;
+}
+
+.Details .showDetails img {
+    width: 30%;
+}
+
+.Details .showDetails {
+    background-color: black;
+    color: white;
+    height: auto;
+    padding: 30px;
+    display: flex;
+}
+
+.Details .showDetails p {
+    padding: 0px 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Details .showDetails {
+        flex-direction: column;
+    }
+    .Details .showDetails img {
+        width: 99%;
+    }
+}

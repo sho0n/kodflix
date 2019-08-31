@@ -16,6 +16,7 @@ function Gallery() {
                             id={tvShow.id}
                             name={tvShow.name}
                             image={tvShow.image}
+                            description={tvShow.description}
                         />
                     ))
                 }

@@ -2,15 +2,6 @@
   text-align: center;
   background-color: black;
 }
-
-.movieInfo {
-  background-color: black;
-  color: white;
-  height: 600px;
-  padding: 30px;
-}
-
-
 .cover {
   width: 100%;
 }
@@ -44,7 +35,7 @@
   filter: brightness(50%);
 }
 
-img {
+.thumbnail {
   width: 99%;
 
 }
