@@ -1,7 +1,8 @@
-    
-module.exports = function shows() {
+module.exports = function shows(){
     return [
-        { id: 'crown', name: 'crown', description: `This drama follows the political rivalries and romance of Queen Elizabeth 
-        II's reign and the events that shaped the second half of the 20th century.` },
+      {id: 'thor', name: 'Thor', description:'As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thors brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.' },
+      {id: 'thor', name: 'Thor', description:'As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thors brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.' },
+      {id: 'thor', name: 'Thor', description:'As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thors brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.' },
+      {id: 'thor', name: 'Thor', description:'As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thors brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.' }
     ]
 }
