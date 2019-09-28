@@ -1,43 +1,44 @@
-import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import getTvshows from '../tvShows-get';
-import './Details.css';
+import React, { useState, useEffect } from "react";
+import { Link, Redirect } from "react-router-dom";
+import "./Details.css";
+import Loading from "./Loading.js";
 
+export default function Details(props) {
+  const [show, setShow] = useState({});
+  const tvShowId = props.match.params.TvShow;
 
-export default class Details extends Component {
+  useEffect(() => {
+    fetch('/rest/tvShows')
+      .then(res => res.json())
+      .then(function (myJson) {
+        let tvShow = myJson.find(show => show.id === tvShowId);
+        setShow(tvShow);
+    });
+    
+}, [tvShowId]);
 
-    constructor() {
-        super();
-        this.state = {
-            tvShows: {}
-        };
-    }
-
-    componentDidMount() {
-        let tvShowId = this.props.match.params.tvShowId;
-        let tvShows = getTvshows()
-            .find((tvShow) => tvShow.id === tvShowId );
-        this.setState({tvShows});
-
-    }
-
-    render() {
-        if(this.state.tvShows === undefined) {
-            return <Redirect to='/not-found'/>
-        } else {
-            return (
-                <div className='Details'>
-                    <Link to='./'>Back to home</Link>
-                    <h1 className='d_tittle'>{this.state.tvShows.name}</h1>
-                    <div className='showDetails'>
-                        <p>{this.state.tvShows.description}</p>
-                        <img 
-                            src= {this.state.tvShows.image}
-                            alt= {this.state.tvShows.name}>
-                        </img>
-                    </div>    
-            </div>
-            );
-        }
-    }
+  if (show.length > 0) {
+    return (
+      <div className="details">
+        <div className="details-container">
+          <h1 className="details-header">{show.name}</h1>
+          <br />
+          <br />
+          <div className="details-info">
+            <p className="details-text">{show.description}</p>
+            <img
+              className="image"
+              src={require(`../images/${show.id}.jpg`)}
+              alt={`${show.name} logo`}
+            />
+          </div>
+          <Link className="Home-Page-Link" to="/">
+            Return to Home Page
+          </Link>
+        </div>
+      </div>
+    );
+  } else {
+    return <div></div>;
+  }
 }
