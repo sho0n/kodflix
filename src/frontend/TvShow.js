@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function TvShow(props) {
   return (
-    
+      
       <Link to={`./${props.id}`} className='item'>
-        <img class="thumbnail" src={require(`./images/${props.id}.jpg`)} alt={`${props.name}`} />
+        <img className="thumbnail" src={require(`./images/${props.id}.jpg`)} alt={`${props.name}`} />
         <div className="overlay">
           <h1>{props.name}</h1>
         </div>
