@@ -6,14 +6,15 @@ import "./Details.css";
 export default function Details(props) {
   const [shows, setShow] = useState({});
   //Get id from url
-  const tvShowId = props.match.params.tvShow;
-  console.log(tvShowId)
+  const tvShowId = props.match.params.tvShowId;
+
   useEffect(() => {
     fetch('/rest/shows')
       .then(response => response.json())
       .then(list => {
         setShow(list.find(tvShow => tvShow.id === tvShowId));
       });
+      
   }, [tvShowId]);
 
   if (shows === undefined) {
@@ -27,7 +28,7 @@ export default function Details(props) {
           <br />
           <div className="details-info">
             <p className="details-text">{shows.description}</p>
-            {/* <img class="thumbnail" src={require(`../images/${shows.id}.jpg`)} alt={`${shows.name}`} /> */}
+            <img className="thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
           </div>
           <Link className="Home-Page-Link" to="/">
             Return to Home Page
