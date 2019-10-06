@@ -30,7 +30,7 @@ export default function Details(props) {
             <p className="details-text">{shows.description}</p>
             <img className="thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
           </div>
-          <Link className="Home-Page-Link" to="/">
+          <Link className="Home-Page-Link" to ="/">
             Return to Home Page
           </Link>
         </div>
