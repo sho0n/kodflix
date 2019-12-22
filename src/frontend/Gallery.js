@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TvShow from "./TvShow";
-import endGame from "./images/endGame.jpg";
+import Nav from './Nav'
 //import getTvshows from "./tvShows-get.js";
 
 
@@ -15,11 +15,10 @@ export default function Gallery() {
     }, [])
   return (
   <div>
-     <div className='mainCover'>
-     <img src={endGame} alt="endGame" className="cover" />
-     </div>
      
+     <Nav></Nav>
       <div className='container'>
+      
        {
          gallery.map(tvShow => (
            <TvShow

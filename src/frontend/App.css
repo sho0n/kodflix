@@ -1,12 +1,96 @@
 .App {
   text-align: center;
   background-color: black;
+  width: 100%;
 }
+.nav {
+  height: 50px;
+  display: block;
+  width: 100%;
+}
+.logo, .logo2, .logo3, .logo4 {
+  display: block;
+  float: left;
+  text-align: left;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+.logo {
+  margin-left: 20px;
+  font-weight: 800;
+  color: rgb(143, 142, 142);
+}
+.logo2 {
+  font-weight: 900;
+  color: rgb(121, 21, 4);
+}
+.logo3 {
+  font-weight: 600;
+  color: rgb(143, 142, 142);
+}
+.logo4 {
+  font-weight: 900;
+  color: rgb(121, 21, 4);
+}
+
+.searchBox {
+  display: block;
+  float: right;
+  height: 24px;
+  width: 150px;
+  background-color: white;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
 .cover {
   width: 100%;
-  filter: contrast(0.8);
+  filter: contrast(0.9);
+  filter: brightness(0.3);
   height: auto;
   bottom: 0;
+  position: relative;
+  
+  
+}
+.coverTitle {
+  top: 100px;
+  left: 15px;
+  height: auto;
+  position: absolute;
+  z-index: 999;
+  
+}
+
+.mainCoverTitle {
+  background-color: black;
+  color: rgb(202, 29, 29);
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.secondaryCoverTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  top: -20px;
+}
+.coverDescription {
+  height: auto;
+  position: absolute;
+  width: 50%;
+  z-index: 999;
+  color: white;
+  bottom: 200px;
+  background-color: black;
+  left: 15px;
 }
 
 .container {
@@ -25,8 +109,8 @@
 
 .thumbnail {
   width: 99%;
- 
 }
+
 
 
 .overlay {

@@ -9,12 +9,11 @@ export default function Details(props) {
   const tvShowId = props.match.params.tvShowId;
 
   useEffect(() => {
-    fetch('/rest/shows')
+    fetch("/rest/shows")
       .then(response => response.json())
       .then(list => {
         setShow(list.find(tvShow => tvShow.id === tvShowId));
       });
-      
   }, [tvShowId]);
 
   if (shows === undefined) {
@@ -23,17 +22,26 @@ export default function Details(props) {
     return (
       <div className="details">
         <div className="details-container">
-          <h1 className="details-header">{shows.name}</h1>
+        <img
+              className="thumbnail2"
+              src={require(`../images/${tvShowId}.jpg`)}
+              alt={`${tvShowId}`}
+            />
+          
+
           <br />
           <br />
-          <div className="details-info">
-            <p className="details-text">{shows.description}</p>
-            <img className="thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
           </div>
-          <Link className="Home-Page-Link" to ="/">
+          <div className="details-info">
+          <h1 className="details-header">{shows.name}</h1>
+            <p className="details-text">{shows.description}</p>
+
+            
+          </div>
+          <Link className="Home-Page-Link" to="/">
             Return to Home Page
           </Link>
-        </div>
+        
       </div>
     );
   }
