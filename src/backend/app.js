@@ -2,7 +2,7 @@
 const express = require('express');
 const getShows = require('./shows');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 const path = require('path');
 
 
