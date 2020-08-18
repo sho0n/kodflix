@@ -24,13 +24,11 @@ export default function Details(props) {
       <div className="details">
         <div className="details-container">
           <h1 className="details-header">{shows.name}</h1>
-          <br />
-          <br />
           <div className="details-info">
             <p className="details-text">{shows.description}</p>
-            <img className="thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
+            <img className="details-thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
           </div>
-          <Link className="Home-Page-Link" to ="/">
+          <Link className="home-Page-Link" to ="/">
             Return to Home Page
           </Link>
         </div>
