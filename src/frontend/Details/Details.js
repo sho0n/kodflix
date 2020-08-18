@@ -29,7 +29,7 @@ export default function Details(props) {
             <img className="details-thumbnail" src={require(`../images/${tvShowId}.jpg`)} alt={`${tvShowId}`} /> 
           </div>
           <Link className="home-Page-Link" to ="/">
-            Return to Home Page
+            Return to Home Page.
           </Link>
         </div>
       </div>
