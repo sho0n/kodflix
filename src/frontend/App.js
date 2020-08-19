@@ -11,6 +11,7 @@ function App() {
     
     <Router>
       <div className="App">
+        
         <Switch>
           <Route exact path='/' component={Gallery} />
           <Route exact path='/not-found' component={NotFound} />

@@ -1,22 +1,46 @@
-.Details .d_tittle {
-    color: white;
-}
 
-.Details .showDetails img {
-    width: 30%;
-}
-
-.Details .showDetails {
+.details{
+    width: 100%;
+    display: block;
+    height: 1200px;
     background-color: black;
-    color: white;
+}
+.thumbnail2 {
+    padding-top: 50px;
+    width: 72%;
+   }
+.details-container {
+    
+    width: 40%;
+    display: block;
+    float: left;
     height: auto;
-    padding: 30px;
-    display: flex;
+
+}
+.Home-Page-Link {
+    color: yellow;
+}
+.details-info {
+    padding-top: 50px;
+    
+    width: 60%;
+    display: block;
+    float: left;
+    height: auto;
+}
+.details-header{
+
+    color: white;
+}
+.details-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+    padding-right: 30px;
+    padding-top: 50px;
+    left: -180px;
 }
 
-.Details .showDetails p {
-    padding: 0px 50px;
-}
 
 @media only screen and (max-width: 600px) {
     .Details .showDetails {
